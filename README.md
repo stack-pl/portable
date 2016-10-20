@@ -18,7 +18,8 @@ Simple improvements for portable version of development tools: Git + Node.js + V
 4) (Optional)
 - delete "portable/.git/" to remove repository instance
 - initialize a new git repository for each project you create
-______________________________
+
+_________________________________________
 
 Git portable: https://git-scm.com/downloads
 - example direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
