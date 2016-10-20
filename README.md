@@ -21,11 +21,13 @@ Simple improvements for portable version of development tools: Git + Node.js + V
 
 _________________________________________
 
+# Download portable development tools
+
 Git portable: https://git-scm.com/downloads
-- example direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
+Example direct link: https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
 
 Node.js portable: https://nodejs.org/dist 
-- example direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
+Example direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
 
 Visual Studio Code portable: https://code.visualstudio.com/Download
-- example direct link https://code.visualstudio.com/docs/?dv=winzip
+Example direct link https://code.visualstudio.com/docs/?dv=winzip
