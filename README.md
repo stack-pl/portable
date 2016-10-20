@@ -15,4 +15,4 @@ Simple improvements for portable versions of development tools: Git + node + VS 
 
 4) (Optional)
 - delete "portable/.git/" to remove repository instance
-- initialize a new git repositories for each project you create
+- initialize a new git repository for each project you create
