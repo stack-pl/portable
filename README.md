@@ -9,7 +9,7 @@ Simple improvements for portable versions of development tools: Git + node + VS 
 
 3) Short description
 - "portable/home/" is your home directory,
-- "portable/home/projects/" is working directory; You have to create here a sub-folder for each of your project. Git will ignore here any files except directories,
+- "portable/home/projects/" is working directory; This is the place you should create a sub-folder for each of your project,
 - "portable/.ssh/" is your SSH key storage,
 - "portable/.ssh/config" is your SSH configuration (eg. edit this file if you want to use more than one key).
 
