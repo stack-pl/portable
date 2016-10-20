@@ -1,14 +1,7 @@
 # portable
 Simple improvements for portable version of development tools: Git + Node.js + VS Code
 
-Git portable: https://git-scm.com/downloads
-- example direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
-
-Node.js portable: https://nodejs.org/dist 
-- example direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
-
-Visual Studio Code portable: https://code.visualstudio.com/Download
-- example direct link https://code.visualstudio.com/docs/?dv=winzip
+# Quick start
 
 1) Put your Git, node and VS Code applications to the specified folders in this project.
 
@@ -25,3 +18,13 @@ Visual Studio Code portable: https://code.visualstudio.com/Download
 4) (Optional)
 - delete "portable/.git/" to remove repository instance
 - initialize a new git repository for each project you create
+______________________________
+
+Git portable: https://git-scm.com/downloads
+- example direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
+
+Node.js portable: https://nodejs.org/dist 
+- example direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
+
+Visual Studio Code portable: https://code.visualstudio.com/Download
+- example direct link https://code.visualstudio.com/docs/?dv=winzip
