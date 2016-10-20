@@ -1,19 +1,19 @@
 # portable
-Simple improvements for portable version of development tools: Git + node + VS Code
+Simple improvements for portable version of development tools: Git + Node.js + VS Code
 
 Git portable: https://git-scm.com/downloads
-- eg. direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
+- example direct link https://github.com/git-for-windows/git/releases/download/v2.10.1.windows.1/PortableGit-2.10.1-64-bit.7z.exe
 
-node portable: https://nodejs.org/dist 
-- eg. direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
+Node.js portable: https://nodejs.org/dist 
+- example direct link https://nodejs.org/dist/v6.9.1/node-v6.9.1-win-x64.zip
 
 Visual Studio Code portable: https://code.visualstudio.com/Download
-- eg. direct link https://code.visualstudio.com/docs/?dv=winzip
+- example direct link https://code.visualstudio.com/docs/?dv=winzip
 
 1) Put your Git, node and VS Code applications to the specified folders in this project.
 
 2) Now you be able to:
-- run "Portable Bash.cmd" to start unix-like console for git & node,
+- run "Portable Bash.cmd" to start unix-like console for git & node.js,
 - run "Portable VS Code.cmd" to start Visual Studio Code,
 
 3) Short description
