@@ -12,12 +12,13 @@ Simple improvements for portable version of development tools: Git + Node.js + V
 3) Short description
 - "portable/home/" is your home directory,
 - "portable/home/projects/" is working directory; This is the place you should create a sub-folder for each of your project,
-- "portable/.ssh/" is your SSH key storage,
-- "portable/.ssh/config" is your SSH configuration (eg. edit this file if you want to use more than one key).
+- "portable/.ssh/" is your default SSH key storage location,
+- "portable/.ssh/config" is your SSH configuration (eg. edit this file if you want to use more than one key),
+- "portable/.gnupg" is your default PGP configuration directory.
 
 4) (Optional)
-- delete "portable/.git/" to remove repository instance
-- initialize a new git repository for each project you create
+- delete "portable/.git/" folder to remove repository instance,
+- initialize a new git repository for each project you create.
 
 _________________________________________
 
