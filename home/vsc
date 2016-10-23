@@ -1,0 +1,5 @@
+
+#!/usr/bin/env bash
+#
+
+eval ~/../VSCode/Code.exe &
