@@ -1,9 +1,9 @@
 # portable
 Simple improvements for portable version of development tools: Git + Node.js + VS Code
 
-# Quick start
+# quick start
 
-1) Put your Git, node and VS Code applications to the specified folders in this project.
+1) Copy your Git, node and VS Code applications to the specified folders in this project.
 
 2) Now you be able to:
 - run "Portable Bash.cmd" to start unix-like console for git & node.js,
@@ -12,13 +12,23 @@ Simple improvements for portable version of development tools: Git + Node.js + V
 3) Short description
 - "portable/home/" is your home directory,
 - "portable/home/projects/" is working directory; This is the place you should create a sub-folder for each of your project,
-- "portable/.ssh/" is your default SSH key storage location,
-- "portable/.ssh/config" is your SSH configuration (eg. edit this file if you want to use more than one key),
-- "portable/.gnupg" is your default PGP configuration directory.
+- "portable/.ssh/" is your default SSH configuration folder,
+- "portable/.gnupg/" is your default PGP configuration folder.
 
 4) (Optional)
-- delete "portable/.git/" folder to remove repository instance,
-- initialize a new git repository for each project you create.
+- delete "portable/.git/" folder to remove repository instance.
+
+5) Run "Portable Bash.cmd",
+if you prefer HTTPS protocol for git type:
+- git clone https://github.com/stackpl/quickstart.git
+if you prefer SSH for github:
+- git clone git@github.com:stackpl/quickstart.git
+Then run:
+- cd quickstart
+- npm init
+- npm install mime
+- node server.js
+- open web browser and go to http://localhost
 
 _________________________________________
 
