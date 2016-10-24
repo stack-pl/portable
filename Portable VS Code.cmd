@@ -1,7 +1,10 @@
-set cur_dir=%~dp0
-set PATH=%cur_dir%node;%PATH%
-set gitdir=%cur_dir%Git
-set PATH=%gitdir%\cmd;%path%
-:: Default home directory
+:: Add node directory to "PATH" environment variable
+set PATH=%cd%\node;%PATH%
+
+:: Add Git and MinGW paths
+set PATH=%cd%\Git\bin;%cd%\Git\usr\bin;%cd%\Git\cmd;%PATH%
+set gitdir=%cd%\Git
 set HOME=%cd%\home
-start %cur_dir%VSCode\Code.exe
+::set USERPROFILE=%HOME%
+
+start /D %HOME% %cur_dir%VSCode\Code.exe
