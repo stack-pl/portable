@@ -19,16 +19,16 @@ Simple improvements for portable version of development tools: Git + Node.js + V
 - delete "portable/.git/" folder to remove repository instance.
 
 5) Run "Portable Bash.cmd",
-if you prefer HTTPS protocol for git type:
-- git clone https://github.com/stackpl/quickstart.git
-if you prefer SSH for github:
-- git clone git@github.com:stackpl/quickstart.git
-Then run:
-- cd quickstart
-- npm init
-- npm install mime
-- node server.js
-- open web browser and go to http://localhost
+-- if you prefer HTTPS protocol for git type:
+-- git clone https://github.com/stackpl/quickstart.git
+- if you prefer SSH for github:
+-- git clone git@github.com:stackpl/quickstart.git
+- Then run:
+-- cd quickstart
+-- npm init
+-- npm install mime
+-- node server.js
+-- open web browser and go to http://localhost
 
 _________________________________________
 
