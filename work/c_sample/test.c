@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 
-int main()
+void main(void)
 {
-    int a = 5;
-    printf("test %d", a);
-    a = a + 3;
-    printf("test %d", a);
-    return 0;
+    printf("Hello World!");
 }
