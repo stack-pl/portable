@@ -2,10 +2,5 @@
 *
 # except
 !.gitignore
-!gcc
-!Git
-!Java
-!nodejs
-!Python3
-!VSCode
+
 
