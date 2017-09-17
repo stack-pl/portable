@@ -1,5 +1,5 @@
 # Ignore everything
-*
+**
 # except
 !.gitignore
 !vsc
@@ -10,4 +10,8 @@
 !.bashrc
 !.ssh
 !.gnupg
+!c_sample\
+!java_sample\
+!node_sample\
+!python_sample\
 
