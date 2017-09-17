@@ -3,7 +3,8 @@
 # except
 !.gitignore
 !vsc
-!kill_ssh_agents
+!kill_ssh_agent
+!start_ssh_agent
 !gitlive
 !.bash_profile
 !.bashrc

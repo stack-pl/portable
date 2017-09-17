@@ -3,23 +3,19 @@ Simple improvements for portable version of development tools: Git + Python + No
 
 # quick start
 
-1) Copy your Git, Python and node in this project.
+1) Copy your Git, Python and node application into this project.
 
 2) Now you be able to:
-- run "bash.cmd" to start unix-like teminal for git, python and node.js,
+- run bash.cmd to start unix-like teminal for git, python and node.js,
 - run ./vsc in this terminal to start Visual Studio Code,
 - run ./gitlive in this terminal to start git live monitor & helper
 
 3) Short description
-- "portable/home/" is your home directory,
-- "portable/home/projects/" is working directory; This is the place you should create a sub-folder for each of your project,
+- "portable/work/" is your home and working directory. This is the place you should create a sub-folder for each of your project,
 - "portable/.ssh/" is your default SSH configuration folder,
 - "portable/.gnupg/" is your default PGP configuration folder.
 
-4) (Optional)
-- delete "portable/.git/" folder to remove repository instance.
-
-5) Run "Portable Bash.cmd",
+4) Run "Portable Bash.cmd",
    if you prefer HTTPS protocol for git type:
    - git clone https://github.com/stackpl/quickstart.git
    if you prefer SSH for github:

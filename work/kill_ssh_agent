@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+
+if [ `ps -f | grep ssh-agent$ | wc -l` -gt 0 ]
+  then
+    kill $(ps -f | grep ssh-agent$ | tr -s " " | cut -d " " -f 3)
+  else
+    echo 'No any SSH agents running'
+  fi
+
