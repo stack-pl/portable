@@ -11,11 +11,11 @@
 !.ssh
 !.gnupg
 !/c_sample
-!/c_sample/*
+!/c_sample/**
 !/java_sample
-!/java_sample/*
+!/java_sample/**
 !/node_sample
-!/node_sample/*
+!/node_sample/**
 !/python_sample
-!/python_sample/*
+!/python_sample/**
 
