@@ -1,13 +1,14 @@
 # portable
-Simple improvements for portable version of development tools: Git + Node.js + VS Code
+Simple improvements for portable version of development tools: Git + Python + Node.js
 
 # quick start
 
-1) Copy your Git, node and VS Code applications to the specified folders in this project.
+1) Copy your Git, Python and node in this project.
 
 2) Now you be able to:
-- run "Portable Bash.cmd" to start unix-like console for git & node.js,
-- run "Portable VS Code.cmd" to start Visual Studio Code,
+- run "bash.cmd" to start unix-like teminal for git, python and node.js,
+- run ./vsc in this terminal to start Visual Studio Code,
+- run ./gitlive in this terminal to start git live monitor & helper
 
 3) Short description
 - "portable/home/" is your home directory,

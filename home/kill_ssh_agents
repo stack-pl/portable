@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#
-
-kill $(ps -f | grep ssh-agent$ | tr -s " " | cut -d " " -f 3)

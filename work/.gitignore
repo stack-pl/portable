@@ -1,0 +1,12 @@
+# Ignore everything
+*
+# except
+!.gitignore
+vsc
+kill_ssh_agents
+gitlive
+.bash_profile
+.bashrc
+.ssh
+.gnupg
+
