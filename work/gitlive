@@ -216,13 +216,13 @@ menu() {
     #  echo -en "${Y}F2${C}Status "
     #fi
 
-    echo -en "${Y}F2${C} add -A "
-    echo -en "${Y}F3${C} reset  "
-    echo -en "${Y}F4${C} add -u "
-    echo -en "${Y}F5${C} commit "
-    echo -en "${Y}F6${C} #push  "
-    echo -en "${Y}F7${C} #fetch "
-    echo -en "${Y}F8${C} #pull  "
+    echo -en "${Y}F2${C}add -A "
+    echo -en "${Y} F3${C}reset  "
+    echo -en "${Y} F4${C}add -u "
+    echo -en "${Y} F5${C}commit "
+    echo -en "${Y} F6${C}#push  "
+    echo -en "${Y} F7${C}#fetch "
+    echo -en "${Y} F8${C}#pull  "
     #if [[ IS_CHANGED -eq 0 ]] ; then
     #  echo -en "${Y}F7${C}Push    "
     #else
