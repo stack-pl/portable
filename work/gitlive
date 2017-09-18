@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 git_branch_current() {
   echo "CURRENT BRANCH:"
   #git branch --points-at HEAD | \
@@ -16,7 +16,7 @@ git_branch_list() {
 }
 
 git_status() {
-  STATUS=$(git status -s -uall)
+  STATUS=$(git status -s -uall --no-lock-index)
   #IS_CHANGED=$(echo "$STATUS" | wc -l)
   echo "$STATUS"
 }
@@ -39,9 +39,9 @@ git_status_tracked() {
 git_status_untracked() {
   if [ `echo "$1" | grep ^[?][?] | wc -l` -gt 0 ]
   then
-    echo "+---------------------"
+    echo "+--------------------------------------"
     echo "|  Untracked files (use \"git add\" or update \".gitignore\")"
-    echo "+---------------------"
+    echo "+--------------------------------------"
     echo "$1" | \
     grep ^[?][?] | \
     sed -r 's/[?][?]\s*(.+)/| \1/'
@@ -256,7 +256,7 @@ menu() {
 
 # TODO: remove function, move body into main loop
 main() {
-echo "$MODE"
+#echo "$MODE"
 
   #if [ $(echo "$STATUS" | wc -w) -gt 0 ]
   if [[ IS_REPO -eq 0 ]] ; then
@@ -364,11 +364,11 @@ while [ 1 ]; do
         ;;
       $'\x1B\x5B\x44'*) # Left
         KEYS="${KEYS##???}"
-        echo "Left"
+        #echo "Left"
         ;;
       $'\x1B\x5B\x43'*) # Right
         KEYS="${KEYS##???}"
-        echo "Right"
+        #echo "Right"
         ;;
       $'\x1B\x4F\x48'*) # Home
         KEYS="${KEYS##???}"
@@ -382,15 +382,15 @@ while [ 1 ]; do
         ;;
       $'\x1B\x4F\x46'*) # End
         KEYS="${KEYS##???}"
-        echo "End"
+        #echo "End"
         ;;
       $'\x1B\x5B\x34\x7E'*) # End (Numpad)
         KEYS="${KEYS##????}"
-        echo "End (Numpad)"
+        #echo "End (Numpad)"
         ;;
       $'\x1B\x5B\x45'*) # 5 (Numpad)
         KEYS="${KEYS#???}"
-        echo "Center (Numpad)"
+        #echo "Center (Numpad)"
         ;;
       $'\x1B\x5B\x35\x7e'*) # PageUp
         KEYS="${KEYS##????}"
@@ -422,19 +422,19 @@ while [ 1 ]; do
         ;;
       $'\x1B\x5B\x32\x7e'*) # Insert
         KEYS="${KEYS##????}"
-        echo "Insert"
+        #echo "Insert"
         ;;
       $'\x1B\x5B\x33\x7e'*) # Delete
         KEYS="${KEYS##????}"
-        echo "Delete"
+        #echo "Delete"
         ;;
       $'\n'*|$'\r'*) # Enter/Return
         KEYS="${KEYS##?}"
-        echo "Enter or Return"
+        #echo "Enter or Return"
         ;;
       $'\t'*) # Tab
         KEYS="${KEYS##?}"
-        echo "Tab"
+        #echo "Tab"
         ;;
       $'\x1B') # Esc (without anything following!)
         KEYS="${KEYS##?}"
@@ -450,7 +450,7 @@ while [ 1 ]; do
         exit 0
         ;;
       $'\x1B\x4F\x51'*) # F2
-        echo "F2"
+        #echo "F2"
         KEYS=""
         if [[ IS_REPO -eq 0 ]] ; then
           git init
@@ -472,8 +472,8 @@ while [ 1 ]; do
         fi
         ;;
       $'\x1B'*) # Unknown escape sequences
-        echo -n "Unknown escape sequence (${#KEYS} chars): \$'"
-        echo -n "$KEYS" | od --width=256 -t x1 | sed -e '2,99 d; s|^[0-9A-Fa-f]* ||; s| |\\x|g; s|$|'"'|"
+        #echo -n "Unknown escape sequence (${#KEYS} chars): \$'"
+        #echo -n "$KEYS" | od --width=256 -t x1 | sed -e '2,99 d; s|^[0-9A-Fa-f]* ||; s| |\\x|g; s|$|'"'|"
         KEYS=""
         ;;
       [$'\x01'-$'\x1F'$'\x7F']*) # Consume control characters
@@ -505,7 +505,7 @@ while [ 1 ]; do
       *) # Printable characters.
         KEY="${KEYS:0:1}"
         KEYS="${KEYS#?}"
-        echo "'$KEY'"
+        #echo "'$KEY'"
         ;;
     esac
 
