@@ -151,7 +151,7 @@ split_slash() {
 }
 
 git_log() {
-  git log --all --graph --decorate --oneline -n 25 --color 2>&1
+  git log --all --graph --decorate --oneline -n 100 --color 2>&1
 #\
 #  | sed -e "s/\x31\x68\x1B\x3D\x0D//;s/\x31\x6C\x1B\x3E//" \
  # | cat ;
