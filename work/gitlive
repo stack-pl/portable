@@ -210,28 +210,30 @@ menu() {
     echo -en "${Y}F8${C}        "
     echo -en "${Y}F9${C}        "
   else
-    if [[ IS_CHANGED -eq 0 ]] ; then
-      echo -en "${Y}F2${C}       "
-    else
-      echo -en "${Y}F2${C}Status "
-    fi
+    #if [[ IS_CHANGED -eq 0 ]] ; then
+    #  echo -en "${Y}F2${C}       "
+    #else
+    #  echo -en "${Y}F2${C}Status "
+    #fi
 
-    echo -en "${Y}F3${C}reset   "
-    echo -en "${Y}F4${C}add -u  "
-    echo -en "${Y}F5${C}commit  "
-    echo -en "${Y}F6${C}        "
+    echo -en "${Y}F2${C} add -A "
+    echo -en "${Y}F3${C} reset  "
+    echo -en "${Y}F4${C} add -u "
+    echo -en "${Y}F5${C} commit "
+    echo -en "${Y}F6${C} #push  "
+    echo -en "${Y}F7${C} #fetch "
+    echo -en "${Y}F8${C} #pull  "
+    #if [[ IS_CHANGED -eq 0 ]] ; then
+    #  echo -en "${Y}F7${C}Push    "
+    #else
+    #  echo -en "${Y}F7${C}        "
+    #fi
 
-    if [[ IS_CHANGED -eq 0 ]] ; then
-      echo -en "${Y}F7${C}Push    "
-    else
-      echo -en "${Y}F7${C}        "
-    fi
-
-    if [[ IS_ANY_BRANCH -eq 0 ]] ; then
-      echo -en "${Y}F8${C}        "
-    else
-      echo -en "${Y}F8${C}LogReflg"
-    fi
+    #if [[ IS_ANY_BRANCH -eq 0 ]] ; then
+    #  echo -en "${Y}F8${C}        "
+    #else
+    #  echo -en "${Y}F8${C}LogReflg"
+    #fi
 
     if [[ IS_GITFLOW -eq 0 ]] ; then
       echo -en "${Y}F9${C}        "
@@ -454,6 +456,10 @@ while [ 1 ]; do
         KEYS=""
         if [[ IS_REPO -eq 0 ]] ; then
           git init
+        else
+          if [[ IS_CHANGED -eq 1 ]] ; then
+            git add -A
+          fi
         fi
         ;;
       $'\x1B\x4F\x52'*) # F3
@@ -471,11 +477,32 @@ while [ 1 ]; do
         fi
         ;;
       $'\x1b\x5b\x31\x35\x7e'*) # F5
-        #echo "F5"
+        echo "F5"
         KEYS=""
         if [[ IS_CHANGED -eq 1 ]] ; then
           git commit
         fi
+        ;;
+      $'\x1b\x5b\x31\x36\x7e'*) # F6
+        echo "F6"
+        KEYS=""
+        #if [[ IS_REPO -eq 1 ]] ; then
+          #git push -q
+        #fi
+        ;;
+      $'\x1b\x5b\x31\x37\x7e'*) # F7
+        echo "F7"
+        KEYS=""
+        #if [[ IS_REPO -eq 1 ]] ; then
+          #git fetch -q
+        #fi
+        ;;
+      $'\x1b\x4f\x31\x39\x7e'*) # F8
+        echo "F8"
+        KEYS=""
+        #if [[ IS_REPO -eq 1 ]] ; then
+          #git pull -q
+        #fi
         ;;
       $'\x1B\x5B\x32\x30\x7E'*) # F9
         KEYS=""
