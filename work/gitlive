@@ -216,10 +216,10 @@ menu() {
       echo -en "${Y}F2${C}Status "
     fi
 
-    echo -en "${Y}F3${C}Add     "
-    echo -en "${Y}F4${C}Commit  "
-    echo -en "${Y}F5${C}MergRbse"
-    echo -en "${Y}F6${C}PullFtch"
+    echo -en "${Y}F3${C}reset   "
+    echo -en "${Y}F4${C}add -u  "
+    echo -en "${Y}F5${C}commit  "
+    echo -en "${Y}F6${C}        "
 
     if [[ IS_CHANGED -eq 0 ]] ; then
       echo -en "${Y}F7${C}Push    "
@@ -454,6 +454,28 @@ while [ 1 ]; do
         KEYS=""
         if [[ IS_REPO -eq 0 ]] ; then
           git init
+        fi
+        ;;
+      $'\x1B\x4F\x52'*) # F3
+        #echo "F3"
+        KEYS=""
+        if [[ IS_CHANGED -eq 1 ]] ; then
+          git reset -q
+        fi
+        ;;
+      $'\x1B\x4F\x53'*) # F4
+        #echo "F4"
+        KEYS=""
+        if [[ IS_CHANGED -eq 1 ]] ; then
+          git add -u
+        fi
+        ;;
+      $'\x1B\x4F\x54'*) # F5
+        echo "F5"
+        KEYS=""
+        if [[ IS_CHANGED -eq 1 ]] ; then
+          echo "F5!"
+          git commit
         fi
         ;;
       $'\x1B\x5B\x32\x30\x7E'*) # F9
