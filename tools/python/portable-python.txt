@@ -1,0 +1,25 @@
+To setup Python 3 environment follow these steps below:
+
+1. Download "Python3 Installer" package from python.org (e.g. python-3.12.0-amd64.exe),
+
+2. Copy the installer into "portable\tools\python\" directory (alongside the script file install-python.sh),
+
+3. Start BASH shell (portable\bash-shell.sh) and run the following commands: 
+   ----------------------------------------------
+   $ cd ../tools/python
+   $ sh ./install-python.sh ./<python_installer.exe>
+   ----------------------------------------------
+   for example: $ ./install-python.sh ./python-3.12.0-amd64.exe
+
+   Next, confirm installation in the setup wizard.
+
+4. Verify Python environment:
+   a. Restart BASH shell and run command below:
+   ------------------
+   $ python --version
+   ------------------
+   The response you should receive will be similar to this:
+   ------------------
+   $ python --version
+   Python 3.12.0
+   ------------------

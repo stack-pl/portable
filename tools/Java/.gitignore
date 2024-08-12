@@ -1,6 +1,8 @@
 # Ignore everything
 *
 # except
+!install-java.sh
+!readme.txt
 !.gitignore
 
 

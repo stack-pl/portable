@@ -1,4 +1,9 @@
 # Ignore everything
 *
 # except
+!kill_ssh_agent
+!start_ssh_agent
+!vsc
 !.gitignore
+
+

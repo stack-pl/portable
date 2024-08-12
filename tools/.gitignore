@@ -3,9 +3,12 @@
 # except
 !.gitignore
 !gcc
-!Git
-!Java
+!git
+!java
 !nodejs
-!Python3
+!python
+!r
+!rust
+!scripts
 !VSCode
 

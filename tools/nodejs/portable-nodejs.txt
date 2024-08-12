@@ -1,0 +1,20 @@
+To setup 'NodeJS' environment follow these steps below:
+
+1. Download Windows Binary (.zip) version (e.g node-v20.11.0-win-x64.zip)
+   Application is availiable at https://nodejs.org/en/download/
+   Save archive into 'portable\tools\nodejs' folder.
+
+2. Run portable\bash-shell.cmd to launch Bash console and execute commands below:
+   -------------------------------------------------
+   $ cd tools/nodejs
+   $ ./install-nodejs.sh ./node-v20.11.0-win-x64.zip
+   -------------------------------------------------
+
+2. Verify if "node" is correctly installed in 'Portable Sandbox'.
+   To do this:
+   - restart Bash console,
+   - enter to projects/node_samle directory' ($ cd ~/projects/node_sample),
+   - initialize node project ($ npm init)
+   - download required package ($ npm install mime)
+   - run project ($ node server.js)
+   - open web browser and go to http://localhost to project website

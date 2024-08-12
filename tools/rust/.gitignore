@@ -1,4 +1,7 @@
 # Ignore everything
 *
 # except
+!install-rust.sh
 !.gitignore
+
+

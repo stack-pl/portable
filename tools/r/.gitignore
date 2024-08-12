@@ -1,0 +1,9 @@
+# Ignore everything
+*
+# except
+!install-r.sh
+!install-rstudio.sh
+!portable-r.txt
+!.gitignore
+
+

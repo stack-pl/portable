@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#
+
+add_keys () {
+    ssh-add ~/.ssh/key
+
+    # add more keys here if you want
+    # ssh-add ~/.ssh/example-key
+}
+
+if [ `echo $0 | grep /bash$ | wc -l` -eq 0 ];
+  then
+    echo "Be sure you are running this script by:"
+    echo "    $ . start_ssh_agent"
+    echo "NOT $ ./start_ssh_agent"
+  else
+    env=~/.ssh/agent.env
+
+    agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+
+    agent_start () {
+        (umask 077; ssh-agent >| "$env")
+        . "$env" >| /dev/null ; }
+
+    agent_load_env
+
+    # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
+    agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
+
+    if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
+        agent_start
+        ssh-add ~/.ssh/key
+        
+    elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
+        ssh-add ~/.ssh/key
+    fi
+
+    unset env
+  fi
+
+
+
+

@@ -1,6 +1,8 @@
 # Ignore everything
 *
 # except
+!portable-nodejs.txt
+!install-nodejs.sh
 !.gitignore
 
 
