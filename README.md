@@ -58,8 +58,8 @@ Folder structure:
    - launch script .\portable\bash-shell.cmd (XTerm window with Bash shell running should appear),
    - command 'git --version' should return a version number.
 
-5. Download "VS Code" Zip archive version:
-   https://code.visualstudio.com/#alt-downloads
+5. Download "VS Code" .Zip archive version:
+   https://code.visualstudio.com/Download#
    Direct link to the latest release: 
    https://code.visualstudio.com/docs/?dv=winzip
    Unpack downloaded file into '.\portable\tools\vscode' sub-folder.
