@@ -18,36 +18,33 @@ inside the Portable Sandbox and no instalation is required.
 
 Folder structure:
    - [portable]
-      -- [projects]  (working directory, sample projects)
-         --- [gcc_sample] 
-         --- [java_sample] 
-         --- [node_sample]
-         --- [python_sample]
-         --- [r_sample]
-         --- [rust_sample]
-      -- [tools]  (editors, compilers, SCM, i.e)
-         --- [gcc]
-         --- [git]
-         --- [java]
-         --- [node]
-         --- [python]
-         --- [r]
-         --- [rust]
-         --- [vscode]
-      -- bash-shell.cmd  (Git-bash terminal)
-      -- cmd-shell.cmd  (Command Prompt CMD or Windows Terminal)
-      -- ev.cmd (configuration script - this is the heart of Portable Sandbox)
-      -- kill_ssh_agent  (close SSH Agent)
-      -- start_ssh_agent  (launch SSH Agent)
-      -- visual-studio-code.cmd (coVS Code launcher)
-      -- visual-studio-code (bash script launcher for VS code)
-      -- [.ssh]  (SSH configuration folder)
-      -- [.gnupg]  (GnuPG configuration folder)
+     - [projects]  (working directory, sample projects)
+         - [gcc_sample] 
+         - [java_sample] 
+         - [node_sample]
+         - [python_sample]
+         - [r_sample]
+         - [rust_sample]
+      - [tools]  (editors, compilers, SCM, i.e)
+         - [gcc]
+         - [git]
+          [java]
+         - [node]
+         - [python]
+         - [r]
+         - [rust]
+         - [vscode]
+       - bash-shell.cmd  (Git-bash terminal)
+       - cmd-shell.cmd  (Command Prompt CMD or Windows Terminal)
+       - ev.cmd (configuration script - this is the heart of Portable Sandbox)
+       - visual-studio-code.cmd (coVS Code launcher)
+       - visual-studio-code (bash script launcher for VS code)
+       - [.ssh]  (SSH configuration folder)
+       - [.gnupg]  (GnuPG configuration folder)
 
 # How to start?
 1. Download the last 'Portable Sandbox' release. The Archive 'portable.zip' 
-   is available at https://stack.pl/portable 
-   and also on github: https://github.com/stack-pl/portable
+   is available on github: https://github.com/stack-pl/portable
 
 2. Unzip the archive you just downloaded in step 1 to your prefered location.
    That will be the Portable Sandbox base folder. For example it can be c:\portable.
@@ -72,4 +69,4 @@ Folder structure:
    - launch script .\portable\visual-studio-code.cmd to run VS Code editor.
 
 7. Depending of your needs, install another tools in '.\portable\tools' directory.
-   Follow 'readme.txt' instructions in particular folders located in '.\portable\tools' to do so.
+   Follow 'portable.txt' instructions in particular folders located in '.\portable\tools' to do so.
