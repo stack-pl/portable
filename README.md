@@ -28,7 +28,7 @@ Folder structure:
       - [tools]  (editors, compilers, SCM, i.e)
          - [gcc]
          - [git]
-          [java]
+         - [java]
          - [node]
          - [python]
          - [r]
