@@ -1,18 +1,20 @@
 # What it is?
 'Portable Sandbox' is a set of development tools (for Windows) combined 
 and configured as one independent folder. You can move this folder anywehere:
-to another drive or even an another computer. Even that, all tools and projects in folder 'portable'
-should works fine from new location.
+to another drive or even an another computer. After that, all tools and projects in folder 'portable' should works fine.
 
-# When I need it?
-- You don't want install any application,
-- You don't want use virtualization,
-- You want to prepare a development environment that will be easy to copy,
-  restore, reproduce, or share.
+# When do I need it?
+- You need a development environment which is not binded to your operating system.
+- You want to prepare the development environment that will be easy to copy, move,
+  restore, share, or reproduce.
+- You don't want install any application.
 
-# How it works?
+# How does it work?
+Launch '''bash-shell.cmd''' or '''cmd-shell.cmd''' script to start the environment.
+You can also create and run your own scripts. For example, look into '''visual-studio-code.cmd''' to easly recreate simmilar script for another program.
+
 The entire tool is just a folder 'portable' that contains a little number of
-scripts and also sub-folders dedicated for specified purposes. All settings 
+scripts and also sub-folders dedicated for specified tools. All settings 
 for launching tools and building projects comes from script files located 
 inside the Portable Sandbox and no instalation is required.
 
@@ -25,7 +27,7 @@ Folder structure:
          - [python_sample]
          - [r_sample]
          - [rust_sample]
-      - [tools]  (editors, compilers, SCM, i.e)
+      - [tools]  (compilers, editors, SCM, i.e)
          - [gcc]
          - [git]
          - [java]
