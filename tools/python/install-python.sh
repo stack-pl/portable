@@ -9,12 +9,12 @@
 
 PRODUCT=$(echo $1 | grep -oP 'python-[0-9][.][0-9]+[.][0-9]+')
 mkdir -p $PRODUCT
-:: TMP_PATH=$(echo "$HOME/tools/python3/$PRODUCT/")
+:: TMP_PATH=$(echo "$HOME/tools/python/$PRODUCT/")
 WIN_TMP_PATH=$(echo "$(pwd -W)/$PRODUCT/")
 TARGET_PATH=$(echo -en "${WIN_TMP_PATH}" | sed -e 's/\//\\\\/g')
 
 echo "Preparing portable $PRODUCT"
 echo "  Path: $TARGET_PATH"
 eval $1 InstallAllUsers=0 TargetDir=$TARGET_PATH AssociateFiles=0 Shortcuts=0 Include_launcher=0 Include_test=0 SimpleInstall=1
-echo "CURRENT_PYTHON=$PRODUCT" > "$HOME/tools/python3/current.sh"
-echo "set CURRENT_PYTHON=$PRODUCT" > "$HOME/tools/python3/current.cmd"
+echo "CURRENT_PYTHON=$PRODUCT" > "$HOME/tools/python/current.sh"
+echo "set CURRENT_PYTHON=$PRODUCT" > "$HOME/tools/python/current.cmd"
